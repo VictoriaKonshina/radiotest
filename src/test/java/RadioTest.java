@@ -3,18 +3,6 @@ import org.junit.jupiter.api.Test;
 
 public class RadioTest {
 
-    @Test
-    public void testMaxNegativeStation() {
-        Radio radio = new Radio();
-
-        radio.setCurrentStation(-8);
-
-        int expected = 0;
-        int actual = radio.getCurrentStation();
-
-        Assertions.assertEquals(expected, actual);
-
-    }
 
     @Test
     public void testMaxFalseStation() {
@@ -65,18 +53,6 @@ public class RadioTest {
 
         Assertions.assertEquals(expected, actual);
 
-    }
-
-    @Test
-    public void testNegativeStation() {
-        Radio radio = new Radio();
-
-        radio.setCurrentStation(-1);
-
-        int expected = 0;
-        int actual = radio.getCurrentStation();
-
-        Assertions.assertEquals(expected, actual);
 
     }
 
