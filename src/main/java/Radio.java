@@ -49,14 +49,15 @@ public class Radio {
 
     public void decrease() {
 
-        if (currentVolume > 0) {
-            currentVolume = currentVolume - 1;
+        if (currentVolume <= 0) {
             return;
-
         }
+        currentVolume = currentVolume - 1;
+        return;
+
     }
 
-    public void setCurrentVolume (int currentVolume){
+    public void setCurrentVolume(int currentVolume) {
         if (currentVolume < 0) {
             return;
         }
