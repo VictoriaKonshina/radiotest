@@ -3,6 +3,7 @@ import org.junit.jupiter.api.Test;
 
 public class RadioStationTest {
     int stationCount;
+
     @Test
     public void testStationMax() {
         Radio radio = new Radio(stationCount = 10);
